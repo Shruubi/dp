@@ -7,13 +7,14 @@
 name=$1
 task=$2
 
+args=${*:3}
+
 # change into appropriate directory, DPPATH should be an env variable
 cd $DPPATH/tasks/$name
 
 # execute make
-
-if [[ $name == 'install' ]]; then
+if [[ $name == 'install' || $name == 'uninstall' ]]; then
         make target=$task
 else
-        make $task
+        make $task $args
 fi
