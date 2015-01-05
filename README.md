@@ -5,6 +5,12 @@ your system.
 
 dp is based upon a rough, hacked-together bash script as well as makefiles.
 
+###install
+
+1 - run `git clone https://github.com/Shruubi/dp.git ~/.dp`
+2 - add `export DPPATH="$HOME/.dp"` to your shell profile
+3 - *optional* link `~/.dp` to `/usr/local/bin` or any other binary install directory you prefer
+
 ###usage
 
 dp structures its commands as `dp package task arg1=val1...argn=valn`
