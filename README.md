@@ -13,6 +13,10 @@ dp structures its commands as `dp package task arg1=val1...argn=valn`
 
 dp packages can be installed by using `dp install username/repo` where username is the Github username of the author, and repo is the repo name of the package.
 
+###updating packages
+
+dp packages can be updated by using `dp update package_name`
+
 ###uninstalling packages
 
 dp packages can be uninstalled by using `dp uninstall package_name` where package_name is the name of the package. You do not need to supply the author name in this case.
