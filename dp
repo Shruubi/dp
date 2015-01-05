@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# usage will be dp <name> <task>
+# eg - dp install shruubi/default
+
+# get name and task as above
+name=$1
+task=$2
+
+# change into appropriate directory, DPPATH should be an env variable
+cd $DPPATH/tasks/$name
+
+# execute make
+
+if [[ $name == 'install' ]]; then
+        make target=$task
+else
+        make $task
+fi
